@@ -24,9 +24,9 @@ makeCacheMatrix <- function(x = matrix()){ #function takes matrix as input
 #A<-makeCacheMatrix() #instantiate MCM function
 #m<<-A$setMatrix(x) # subfunction (with this instantiation) - generates inverse and assigns it to variable
 
-# ## cacheSolve computes the inverse of the special "matrix" returned by makeCacheMatrix. 
-# ## If the inverse has already been calculated (and the matrix has not changed), 
-# ## then the cachesolve should retrieve the inverse from the cache.
+## This function (cacheSolve) computes the inverse of the special "matrix" returned by makeCacheMatrix. 
+## If the inverse has already been calculated (and the matrix has not changed), 
+## then the cachesolve should retrieve the inverse from the cache.
 
 cacheSolve <- function(x=matrix(),...){ #function takes matrix as input
         if(!is.null(m)){ #check to see if existing m is null; if not...
